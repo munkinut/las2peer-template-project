@@ -28,8 +28,7 @@ import io.swagger.annotations.SwaggerDefinition;
                         url = "http://your-software-license-url.com")))
 public class JBotNetService extends Service {
 
-    public boolean storeJBot(JBot jBot) {
-        String identifier = jBot.getRealName();
+    public boolean storeJBot(String identifier, JBot jBot) {
         boolean success;
         try {
             Envelope env = null;
